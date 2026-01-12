@@ -6,6 +6,8 @@ import './App.css'
 import Wiki from './pages/Wiki';
 import Home from './pages/Home';
 import Navbar from './components/Navbar'
+import Chatbot from './components/Chatbot';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/wiki" element={<Wiki />} />
       </Routes>
+      <Chatbot></Chatbot> 
     </BrowserRouter>
   )
 }
