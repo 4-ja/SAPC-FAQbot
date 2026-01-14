@@ -7,6 +7,7 @@ import Wiki from './pages/Wiki';
 import Home from './pages/Home';
 import Navbar from './components/Navbar'
 import Chatbot from './components/Chatbot';
+import GuideDetail from './pages/GuideDetail';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/wiki" element={<Wiki />} />
+        <Route path="/wiki/:id" element={<GuideDetail />} />
       </Routes>
       <Chatbot></Chatbot> 
     </BrowserRouter>
